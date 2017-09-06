@@ -37,6 +37,7 @@ Major release **removing Puppet 3 support** and other backwards-incompatible cha
 - Puppet version compatibility to ">= 4.7.0 < 6.0.0"
 - puppetlabs-stdlib dependency to ">= 4.12.0 < 5.0.0"
 - `ssl_cipher` to explicitly disable 3DES because of Sweet32
+- ssl client authentication directives are now only included when necessary
 
 #### Fixed
 - various issues in the vhost template
@@ -46,6 +47,7 @@ Major release **removing Puppet 3 support** and other backwards-incompatible cha
 - mod::cgi ordering for FreeBSD
 - issue where ProxyPreserveHost could not be set without other Proxy* directives
 - the module attempting to install proxy_html on Ubuntu Xenial and Debian Stretch
+- ssl certificate authentication overly broad issues with defaults.
 
 ## Supported Release [1.11.0]
 ### Summary
